@@ -1,0 +1,44 @@
+Computer says YES, 25.09.18
+
+shell scripting
+
+basically its a text-code of bash commands joint together in a file, which is executable by bash
+
+infos in wiki
+
+every script begins with #!/bin/bash
+	- tells os, which language to use -> bash
+
+
+vars created per assignment: var = "smthsmth"
+and adressed by $: $var
+
+vars are NOT saved .... duh -.- but you can export it with: export var
+	exported vars 	are assumed to have their value in each script
+			are resetted after session
+
+arrays: array = (smth smth smth)
+	echo ${array[*]}
+	extendable by: array += (smth smth smth)
+
+calc can be done by $((...))
+	usable with vars: x=2; y=$((x+3))
+
+If loops
+
+if [ statement ]; then
+	commands
+fi
+	-> exact syntax is important, even spaces!
+
+WTF is it good for?
+- Makros /alias
+- grabbing shell output
+	-> automatizing more complex processes (calling seeral scripts, using vars)
+- makefiles
+	-> better than make.sh, cause more functionality (can clean, create documentary)
+	-  seems to be complicated, but useful for installing / compiling
+	-  kinda complicated, but useful for bigger projects
+	-  compiling latex thesis with makefile
+	-  cmakes can create makefiles / übermakefile - both for linux and windows
+	-  made by gnu, documentation is good
